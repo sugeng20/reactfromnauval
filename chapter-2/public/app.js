@@ -1,13 +1,8 @@
 const root = document.querySelector("#root");
-console.log("Oke");
-function tick() {
-  const className = "box";
-  const element = /*#__PURE__*/React.createElement("div", {
-    className: className
-  });
-  ReactDOM.render(element, root);
+function padaSaatAkuDiklik(msg) {
+  alert(msg);
 }
-tick();
-setInterval(() => {
-  tick();
-}, 1000);
+const element = /*#__PURE__*/React.createElement("button", {
+  onClick: padaSaatAkuDiklik.bind(this, "Helo nama sya sugeng")
+}, "Click Me");
+ReactDOM.render(element, root);
