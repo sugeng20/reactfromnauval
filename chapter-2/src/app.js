@@ -4,12 +4,13 @@ console.log("Oke");
 
 function tick() {
   const element = (
-    <>
-      <div>
-        <h1>Jam Sekarang :</h1>
-        <p>{new Date().toLocaleTimeString()}</p>
-      </div>
-    </>
+    <div
+      style={{
+        width: 200,
+        height: 200,
+        backgroundColor: "blue",
+      }}
+    ></div>
   );
   ReactDOM.render(element, root);
 }
