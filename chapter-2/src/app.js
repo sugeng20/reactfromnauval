@@ -3,15 +3,8 @@ const root = document.querySelector("#root");
 console.log("Oke");
 
 function tick() {
-  const element = (
-    <div
-      style={{
-        width: 200,
-        height: 200,
-        backgroundColor: "blue",
-      }}
-    ></div>
-  );
+  const className = "box";
+  const element = <div className={className}></div>;
   ReactDOM.render(element, root);
 }
 
